@@ -1,0 +1,41 @@
+/*
+Declaration block:
+
+ Selector{
+    property: value;
+    property: value;
+}
+*/
+
+body {
+    background-color: #18c31b;
+    font-family: Arial, sans-serif;
+    color: #d20e0e;
+}
+
+nav{
+    height: 600px;
+    width: 200px;
+    float: left;
+    padding:5px;
+    line-height: 30px
+
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+
+
+}
+
+#memeimage{
+    margin-right: 200px;
+    width: 400px;
+
+}
+
+h1{
+    text-align: center;
+    color: #c3130d;
+}
