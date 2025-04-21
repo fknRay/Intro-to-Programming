@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Yeah, another palindrome Checker.</title>
-    <link rel="stylesheet" href="main.css">
-
-    
+    <title>Palindrome Checker</title>
+    <style>
+        /* Styling for the form and results */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px auto;
+            display: inline-block;
+            text-align: left;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+        #palindromeResults, #validationMessage {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        #validationMessage {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Raymond Vera Palindrome Checker, bruh</h1>
-    <input type="text" id="palindromeField">
-    <button onclick="Checkforpalindrome()" >Activate Palindrome Checker</button>
+    <!-- Form for user input -->
+    <form id="userform" onsubmit="return validateAndCheckPalindrome()">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="text" id="zipCode" placeholder="Zip Code" required>
+        <input type="text" id="palindromeField" placeholder="Tryna see if dis a p-drome or nah?" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="validationMessage"></p>
     <p id="palindromeResults"></p>
     <script src="code.js" defer></script>
-</body> 
+</body>
 </html>
