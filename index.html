@@ -1,5 +1,6 @@
-<!-- Bro this took so long to learn how to do, might need adderall to get through this class-->
-<!-- Raymond Alejandro Vera-->
+<!-- Raymond Alejandro Vera -->
+<!-- Week 3 Project: Adding background sound, creative elements, and enhancing user experience -->
+
 <!Doctype html>
 <html lang="en">   
     <head>
@@ -8,14 +9,61 @@
         <link rel="stylesheet" href="main.css">
         <!-- Link to the JavaScript file -->
         <script src="main.js" defer></script>
+        <!-- Add a Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <style>
+            /* Creative elements: background color, font, and button styling */
+            body {
+                background-color: #1e1e2f; /* Dark background for a modern look */
+                color: #ffffff; /* White text for contrast */
+                font-family: 'Roboto', sans-serif; /* Apply Google Font */
+                text-align: center; /* Center-align content */
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                margin-top: 20px;
+            }
+            button {
+                background-color: #4caf50; /* Green button */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color: #45a049; /* Slightly darker green on hover */
+            }
+            #memeimage {
+                border: 5px solid #ffffff; /* Add a white border around the image */
+                border-radius: 10px; /* Rounded corners for the image */
+            }
+        </style>
     </head>
     <body>
+        <!-- Main heading -->
         <h1>We out here</h1>
+        
+        <!-- Image with a unique look -->
         <p>
             <img id="memeimage" src="ufo.jpg" alt="UFO" width="500" height="600">
         </p>
+        
         <!-- Buttons to start and stop the image movement -->
         <button id="startButton">Start</button>
         <button id="stopButton">Stop</button>
+
+        <!-- Audio element for background sound -->
+        <audio id="backgroundSound" loop>
+            <source src="x-files-intro.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Buttons to control background sound -->
+        <button id="playSoundButton">Play Sound</button>
+        <button id="pauseSoundButton">Pause Sound</button>
     </body>
 </html>
