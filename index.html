@@ -1,5 +1,6 @@
 <!-- Raymond Alejandro Vera -->
 <!-- Week 3 Project: Adding background sound, creative elements, and enhancing user experience -->
+<!-- Updated: May 4, 2025 -->
 
 <!Doctype html>
 <html lang="en">   
@@ -11,59 +12,75 @@
         <script src="main.js" defer></script>
         <!-- Add a Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <style>
-            /* Creative elements: background color, font, and button styling */
-            body {
-                background-color: #1e1e2f; /* Dark background for a modern look */
-                color: #ffffff; /* White text for contrast */
-                font-family: 'Roboto', sans-serif; /* Apply Google Font */
-                text-align: center; /* Center-align content */
-                margin: 0;
-                padding: 0;
-            }
-            h1 {
-                margin-top: 20px;
-            }
-            button {
-                background-color: #4caf50; /* Green button */
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                margin: 10px;
-                cursor: pointer;
-                font-size: 16px;
-                border-radius: 5px;
-            }
-            button:hover {
-                background-color: #45a049; /* Slightly darker green on hover */
-            }
-            #memeimage {
-                border: 5px solid #ffffff; /* Add a white border around the image */
-                border-radius: 10px; /* Rounded corners for the image */
-            }
-        </style>
     </head>
     <body>
-        <!-- Main heading -->
-        <h1>We out here</h1>
+        <header>
+            <h1>We out here</h1>
+        </header>
         
-        <!-- Image with a unique look -->
+        <nav>
+            <h2>Navigation</h2>
+            <a href="./index.html">Home</a><br>
+            <a href="./boards.html">Boards</a><br>
+            <a href="./game.html">Game</a><br>
+            <a href="./palindrome.html">Palindrome</a><br>
+            <a href="./user-input.html">User Input</a><br>
+            <a href="./table.html">Table</a><br>
+        </nav>
+
         <p>
             <img id="memeimage" src="ufo.jpg" alt="UFO" width="500" height="600">
         </p>
         
-        <!-- Buttons to start and stop the image movement -->
         <button id="startButton">Start</button>
         <button id="stopButton">Stop</button>
 
-        <!-- Audio element for background sound -->
-        <audio id="backgroundSound" loop>
+        <audio id="x-files-intro" loop>
             <source src="x-files-intro.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         
-        <!-- Buttons to control background sound -->
         <button id="playSoundButton">Play Sound</button>
         <button id="pauseSoundButton">Pause Sound</button>
+
+        <!-- Table with useful information -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Planet</th>
+                    <th>Distance from Earth (light-years)</th>
+                    <th>Potential for Life</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proxima Centauri b</td>
+                    <td>4.24</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Kepler-452b</td>
+                    <td>1,400</td>
+                    <td>Moderate</td>
+                </tr>
+                <tr>
+                    <td>TRAPPIST-1e</td>
+                    <td>39.6</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Gliese 581g</td>
+                    <td>20.3</td>
+                    <td>Unknown</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            Raymond Alejandro Vera<br>
+            University of Advancing Technology<br>
+            2625 W Baseline Rd<br>
+            Tempe, AZ 85283<br>
+        </footer>
     </body>
 </html>
